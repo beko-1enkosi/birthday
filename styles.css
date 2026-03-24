@@ -1,0 +1,538 @@
+/* ========================================
+SECTION: ROOT & BASE STYLES
+========================================
+*/
+:root {
+    --bg-color: #fdfdfc; /* Off-white paper feel */
+    --text-main: #1a1a1a;
+    --text-muted: #666666;
+    --accent-blue: #0057ff; /* Clinical/Lab Blue */
+    --accent-sweet: #ff4d6d; /* Soft rose-red for heart */
+    --border-color: #e5e5e1;
+    --font-serif: 'Instrument Serif', serif;
+    --font-sans: 'Inter', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-main);
+    font-family: var(--font-sans);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* ========================================
+SECTION: NAVIGATION & PROGRESS
+========================================
+*/
+.reading-progress {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 3px;
+    background: var(--accent-blue);
+    z-index: 2000;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 1.5rem 2rem;
+    background: rgba(253, 253, 252, 0.8);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--border-color);
+    z-index: 1000;
+}
+
+.nav-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.journal-meta {
+    display: flex;
+    flex-direction: column;
+}
+
+.journal-title {
+    font-family: var(--font-serif);
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.journal-issn {
+    font-size: 0.65rem;
+    letter-spacing: 0.1em;
+    color: var(--text-muted);
+    font-weight: 600;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 2.5rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--text-main);
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: var(--accent-blue);
+}
+
+.cite-btn {
+    background: var(--text-main);
+    color: white;
+    border: none;
+    padding: 0.6rem 1.2rem;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    cursor: pointer;
+    border-radius: 2px;
+}
+
+/* ========================================
+SECTION: HERO (ABSTRACT)
+========================================
+*/
+.hero-section {
+    padding-top: 120px;
+    padding-bottom: 60px;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.category-pill {
+    background: var(--text-main);
+    color: white;
+    padding: 0.3rem 0.8rem;
+    font-size: 0.65rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-weight: 600;
+    margin-right: 1rem;
+}
+
+.date-published {
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    font-style: italic;
+}
+
+.article-title {
+    font-family: var(--font-serif);
+    font-size: clamp(2.5rem, 8vw, 4.5rem);
+    line-height: 1.1;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-weight: 400;
+}
+
+.highlight {
+    color: var(--accent-blue);
+    font-style: italic;
+}
+
+.author-block {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 0;
+    border-top: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border-color);
+    font-size: 0.85rem;
+    margin-bottom: 3rem;
+}
+
+.figure-main {
+    margin-bottom: 4rem;
+}
+
+.img-wrapper {
+    background: #f0f0f0;
+    padding: 10px;
+    border: 1px solid var(--border-color);
+    max-height: 600px; 
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-img {
+    width: 100%;
+    height: 800px; 
+    object-fit: cover; 
+    object-position: center 30%;
+    display: block;
+    filter: grayscale(10%) contrast(105%);
+}
+
+.figure-caption {
+    margin-top: 1rem;
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    line-height: 1.4;
+    border-left: 2px solid var(--accent-blue);
+    padding-left: 1rem;
+}
+
+.abstract-box {
+    background: #f9f9f7;
+    padding: 2.5rem;
+    border: 1px solid var(--border-color);
+}
+
+.abstract-box h3 {
+    font-family: var(--font-serif);
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid var(--text-main);
+    display: inline-block;
+}
+
+/* ========================================
+SECTION: MILESTONES (METHODS)
+========================================
+*/
+.section-padding {
+    padding: 100px 1.5rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.section-header {
+    margin-bottom: 4rem;
+}
+
+.step-number {
+    font-size: 0.8rem;
+    color: var(--accent-blue);
+    font-weight: 600;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.serif-title {
+    font-family: var(--font-serif);
+    font-size: 3rem;
+    font-weight: 400;
+}
+
+.section-subtitle {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+}
+
+.timeline {
+    position: relative;
+    padding-left: 2rem;
+    border-left: 1px solid var(--border-color);
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 4rem;
+}
+
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: calc(-2rem - 5px);
+    top: 5px;
+    width: 9px;
+    height: 9px;
+    background: var(--accent-blue);
+    border-radius: 50%;
+}
+
+.timeline-date {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+}
+
+.timeline-content h3 {
+    font-family: var(--font-serif);
+    font-size: 1.8rem;
+    font-weight: 400;
+    margin-bottom: 0.8rem;
+}
+
+.lab-tag {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.3rem 0.6rem;
+    background: #eef2ff;
+    color: var(--accent-blue);
+    font-size: 0.7rem;
+    font-weight: 600;
+    border-radius: 4px;
+}
+
+/* ========================================
+SECTION: PEER REVIEW (FRIENDSHIP)
+========================================
+*/
+.peer-review-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.review-card {
+    background: white;
+    padding: 3rem 2rem;
+    border: 1px solid var(--border-color);
+    position: relative;
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.review-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(255, 77, 109, 0.05);
+    border-color: #ffc2d1;
+}
+
+.trait-header {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    margin-bottom: 1.5rem;
+}
+
+.trait-icon {
+    width: 20px;
+    height: 20px;
+    color: var(--accent-sweet);
+}
+
+.trait-label {
+    font-size: 0.7rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--text-muted);
+}
+
+.review-text {
+    font-size: 1.15rem;
+    line-height: 1.7;
+    color: #333;
+    margin-bottom: 2rem;
+}
+
+.reviewer-meta {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--text-muted);
+    border-top: 1px solid var(--border-color);
+    padding-top: 1rem;
+}
+
+/* ========================================
+SECTION: DATA VISUALIZATION (GALLERY)
+========================================
+*/
+.data-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.data-item {
+    background: #fff;
+    border: 1px solid var(--border-color);
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.data-img, .data-video {
+    width: 100%;
+    height: 400px;
+    object-fit: cover; /* This prevents the video distortion */
+    object-position: center;
+    display: block;
+}
+
+.data-caption {
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    padding: 1rem 0.5rem 0.5rem;
+    font-style: italic;
+    border-top: 1px solid #f0f0f0;
+    margin-top: 10px;
+}
+
+.video-item {
+    grid-column: span 1;
+}
+
+/* ========================================
+SECTION: ANIMATIONS & RESPONSIVE
+========================================
+*/
+.reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s cubic-bezier(0.2, 1, 0.3, 1);
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* TABLET / LARGE PHONE */
+@media (max-width: 768px) {
+    .nav-links, .nav-cta { display: none; }
+    .peer-review-grid { grid-template-columns: 1fr; }
+}
+
+/* MOBILE SHORTER HERO */
+@media (max-width: 600px) {
+    .hero-img { height: 400px; }
+}
+
+/* DESKTOP GALLERY VIDEO SIZE */
+@media (min-width: 900px) {
+    .video-item { grid-column: span 2; } 
+}
+
+/* ========================================
+SECTION: LOADING SCREEN
+========================================
+*/
+#loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--bg-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    transition: transform 1s cubic-bezier(0.85, 0, 0.15, 1);
+}
+
+.loader-content {
+    text-align: center;
+}
+
+.loader-text {
+    font-family: var(--font-serif);
+    font-size: 1.2rem;
+    margin-top: 1.5rem;
+    letter-spacing: 0.1em;
+    color: var(--text-main);
+}
+
+/* A simple clinical-style pulse animation */
+.dna-spinner {
+    width: 40px;
+    height: 40px;
+    border: 2px solid var(--border-color);
+    border-top: 2px solid var(--accent-blue);
+    border-radius: 50%;
+    margin: 0 auto;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.loader-progress-container {
+    width: 200px;
+    height: 2px;
+    background: var(--border-color);
+    margin: 20px auto;
+    overflow: hidden;
+}
+
+.loader-progress-bar {
+    width: 0%;
+    height: 100%;
+    background: var(--accent-blue);
+    animation: loadProgress 2s ease-in-out forwards;
+}
+
+@keyframes loadProgress {
+    0% { width: 0%; }
+    100% { width: 100%; }
+}
+
+/* Class to hide loader via JS */
+.loader-hidden {
+    transform: translateY(-100%);
+}
+
+/* ========================================
+SECTION: BIRTHDAY POPUP
+========================================
+*/
+.bday-popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(253, 253, 252, 0.95);
+    z-index: 9000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s ease;
+    background: rgba(253, 253, 252, 0.8); /* Lowered opacity to see confetti through it */
+    backdrop-filter: blur(8px);
+}
+
+.bday-popup.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.popup-content {
+    text-align: center;
+    background: white;
+    padding: 4rem;
+    border: 1px solid var(--border-color);
+    box-shadow: 0 30px 60px rgba(0,0,0,0.05);
+    border: 2px solid var(--accent-blue); /* Thicker blue border like a lab label */
+    border-radius: 0px; /* Keeping it sharp and professional */
+}
+
+.popup-content h2 {
+    font-size: 3rem;
+    margin: 1.5rem 0;
+}

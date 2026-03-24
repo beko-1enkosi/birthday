@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hlubi | Vol. 25 Anniversary Edition</title>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    
+    <div id="loader">
+        <div class="loader-content">
+            <div class="dna-spinner"></div>
+            <p class="loader-text">Sequencing Hlubi's Data...</p>
+            <div class="loader-progress-container">
+                <div class="loader-progress-bar"></div>
+            </div>
+        </div>
+    </div>
+
+    <div id="birthday-popup" class="bday-popup">
+        <div class="popup-content">
+            <span class="category-pill">Annual Event</span>
+            <h2 class="serif-title">Happy 25th Birthday, Hlubi!</h2>
+            <p>Biological maturity: 100% Achieved.</p>
+            <button onclick="closePopup()" class="cite-btn">Enter Journal</button>
+        </div>
+    </div>
+
+    <div class="reading-progress"></div>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="journal-meta">
+                <span class="journal-title">Journal of Hlubi Makhanda.</span>
+                <span class="journal-issn">ISSN 2525-2026 • OPEN ACCESS</span>
+            </div>
+            
+            <ul class="nav-links">
+                <li><a href="#home">Abstract</a></li>
+                <li><a href="#milestones">Methods</a></li>
+                <li><a href="#friendship">Peer Review</a></li>
+                <li><a href="#gallery">Data Visualization</a></li>
+            </ul>
+
+            <div class="nav-cta">
+                <button class="cite-btn">Cite This Memory</button>
+            </div>
+        </div>
+    </nav>
+
+    <main id="home">
+        <section class="hero-section">
+            <div class="hero-container">
+                <div class="article-meta reveal">
+                    <span class="category-pill">Original Research</span>
+                    <span class="date-published">Published: 24 March 2026</span>
+                </div>
+
+                <h1 class="article-title reveal">
+                    A Longitudinal Study on the <span class="highlight">Epigenetics Modification Brilliance</span> & Frontal Lobe Maturity of Makhanda NK.
+                </h1>
+
+                <div class="author-block reveal">
+                    <div class="author-info">
+                        <strong>Lead Researcher:</strong> Her Favorite Person<br>
+                        <strong>Affiliation:</strong> Department of Medical Biochemistry
+                    </div>
+                    <div class="doi-info">
+                        <strong>DOI:</strong> 10.25/BIRTHDAY-HLUBI
+                    </div>
+                </div>
+
+                <div class="figure-main reveal">
+                    <div class="img-wrapper">
+                        <img src="https://i.ibb.co/Q3Y1xgjx/Whats-App-Image-2026-03-24-at-10-18-24.jpg" alt="Hlubi Graduation" class="hero-img">
+                        <div class="figure-caption">
+                            <strong>Figure 1.0:</strong> Subject exhibiting peak academic achievement. Note the high concentration of excellence in the Graduation smile.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- <a href="https://ibb.co/B5TSYpKY"><img src="https://i.ibb.co/Q3Y1xgjx/Whats-App-Image-2026-03-24-at-10-18-24.jpg" alt="Whats-App-Image-2026-03-24-at-10-18-24" border="0"></a> -->
+
+                <div class="abstract-box reveal">
+                    <h3>Abstract</h3>
+                    <p>
+                        As of this date, the subject (Hlubi) has officially completed 25 years of biological development. 
+                        Extensive analysis of her journey in <strong>Medical Biochemistry</strong> and <strong>Epigenetics Modification</strong> 
+                        confirms a 100% correlation between age and increased radiance. Most notably, data suggests the 
+                        <strong>frontal lobe</strong> has reached full maturity, marking a significant milestone in her evolutionary timeline.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="milestones" class="section-padding">
+            <div class="container">
+                <div class="section-header">
+                    <span class="step-number">01</span>
+                    <h2 class="serif-title">Methodology & Life Sequence</h2>
+                    <p class="section-subtitle">A chronological analysis of key developmental triggers.</p>
+                </div>
+
+                <div class="timeline">
+                    <div class="timeline-item reveal">
+                        <div class="timeline-date">2001 — 2018</div>
+                        <div class="timeline-content">
+                            <h3>Initial Synthesis</h3>
+                            <p>Early childhood development and basic education. Foundation of a curious mind and the first epigenetic markers of a future scientist.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item reveal">
+                        <div class="timeline-date">2019 — 2023</div>
+                        <div class="timeline-content">
+                            <h3>Undergraduate Catalysis</h3>
+                            <p>Entry into the world of Biochemistry. Hours spent in labs, mastering the pipette, and discovering a passion for the molecular mechanics of life.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item reveal">
+                        <div class="timeline-date">2024 — 2025</div>
+                        <div class="timeline-content">
+                            <h3>Targeted Enrichment (Honours)</h3>
+                            <p>
+                                Concentrated research into <strong>Metabolic Biochemistry</strong>. 
+                                Investigated the therapeutic potential of bioactive compounds found in 
+                                <em>Bush Tea</em>—specifically focusing on <strong>Phytic Acid</strong> 
+                                derivatives and their epigenetic influence on Diabetes management.
+                            </p>
+                            <span class="lab-tag">Specialization: Diabetic Glycation Pathways</span>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item reveal">
+                        <div class="timeline-date">2025 — Present</div>
+                        <div class="timeline-content">
+                            <h3>Masters Specialization</h3>
+                            <p>Advanced research in <strong>Medical Biochemistry & Epigenetics</strong>. Successfully navigating the complexities of gene expression and academic excellence.</p>
+                            <span class="lab-tag">Current Phase: Masters Candidate & My Best-Friend</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="friendship" class="section-padding">
+            <div class="container">
+                <div class="section-header">
+                    <span class="step-number">02</span>
+                    <h2 class="serif-title">Peer Review & Collaborative Study</h2>
+                    <p class="section-subtitle">A qualitative analysis of long-term friendship dynamics.</p>
+                </div>
+
+                <div class="peer-review-grid">
+                    <div class="review-card reveal">
+                        <div class="trait-header">
+                            <i data-lucide="heart" class="trait-icon"></i>
+                            <span class="trait-label">Essential Constant</span>
+                        </div>
+                        <p class="review-text">
+                            "Analysis confirms a rare cardiac profile: Hlubi possesses an <strong>unlimited capacity for patience</strong> and a heart that functions as a natural sanctuary for everyone she loves."
+                        </p>
+                        <div class="reviewer-meta">
+                            Observed by: Her Circle of Trust
+                        </div>
+                    </div>
+
+                    <div class="review-card reveal">
+                        <div class="trait-header">
+                            <i data-lucide="users" class="trait-icon"></i>
+                            <span class="trait-label">Intermolecular Bonding</span>
+                        </div>
+                        <p class="review-text">
+                            "She believes in the science of friendship. Her loyalty isn't just a choice; it's an <strong>epigenetic masterpiece</strong>—ingrained, steady, and life-sustaining for all of us."
+                        </p>
+                        <div class="reviewer-meta">
+                            Status: Irreplaceable Connection
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="gallery" class="section-padding">
+            <div class="container">
+                <div class="section-header">
+                    <span class="step-number">03</span>
+                    <h2 class="serif-title">Data Visualization</h2>
+                    <p class="section-subtitle">Captured moments of the subject in her natural habitat.</p>
+                </div>
+
+                <div class="data-grid">
+                    <div class="data-item video-item reveal">
+                        <video autoplay muted loop playsinline class="data-video">
+                            <source src="assets/video1.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <div class="data-caption">Live Feed: Unfiltered Joy Analysis & Kinetic Energy.</div>
+                    </div>
+
+                    <div class="data-item reveal">
+                        <img src="https://i.ibb.co/Q30956gv/Whats-App-Image-2026-03-24-at-11-05-45.jpg" alt="Memory" class="data-img">
+                        <div class="data-caption">Figure 2.1: Interaction with Environment; showcasing natural elegance.</div>
+                    </div>
+                    
+                    <div class="data-item reveal">
+                        <img src="https://i.ibb.co/9HKMkSWL/Whats-App-Image-2026-03-24-at-11-12-30.jpg" alt="Memory" class="data-img">
+                        <div class="data-caption">Figure 2.2: Longitudinal study of a perfect smile (100% confidence interval).</div>
+                    </div>
+
+                    <div class="data-item reveal">
+                        <img src="https://i.ibb.co/NgB0XJPw/Whats-App-Image-2026-03-24-at-11-11-55.jpg" alt="Memory" class="data-img">
+                        <div class="data-caption">Figure 2.3: Collaborative Study; high-strength intermolecular bonding detected.</div>
+                    </div>
+
+                    <div class="data-item reveal">
+                        <img src="https://i.ibb.co/ch8Lp2W2/Whats-App-Image-2026-03-24-at-11-11-11-1.jpg" alt="Memory" class="data-img">
+                        <div class="data-caption">Figure 2.4: Aesthetic Analysis; subject maintains peak radiance under all conditions.</div>
+                    </div>
+
+                    <div class="data-item reveal">
+                        <img src="https://i.ibb.co/Z6ygGGxL/Whats-App-Image-2026-03-24-at-11-05-32.jpg" alt="Memory" class="data-img">
+                        <div class="data-caption">Figure 2.5: Peer Review in progress; laughing until the laboratory closes.</div>
+                    </div>
+
+                    <div class="data-item reveal">
+                        <img src="https://i.ibb.co/qMbXMkY9/Whats-App-Image-2026-03-24-at-11-00-23.jpg" alt="Memory" class="data-img">
+                        <div class="data-caption">Figure 2.6: Structural Integrity of a Master's student during peak productivity.</div>
+                    </div>
+
+                    <div class="data-item reveal">
+                        <img src="https://i.ibb.co/TsbC5rH/Whats-App-Image-2026-03-24-at-11-00-20.jpg" alt="Memory" class="data-img">
+                        <div class="data-caption">Figure 2.7: Final Summary; evidence of a genuinely loving and patient soul.</div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <section id="conclusion" class="section-padding">
+        <div class="container">
+            <div class="abstract-box reveal">
+                <h2 class="serif-title" style="font-size: 2.5rem; margin-bottom: 1.5rem;">Conclusion & Acknowledgements ❤️❤️❤️</h2>
+                <p style="font-size: 1.2rem; margin-bottom: 2rem;">
+                    The findings of this 25-year study are conclusive: <strong>Hlubi Makhanda</strong> is a biological marvel. 
+                    Her transition into this new phase of "Full Frontal Lobe Maturity" is expected to be marked by 
+                    even greater scientific breakthroughs, deeper friendships, and continued excellence in the field of being an 
+                    incredible human being.
+                </p>
+                <p style="font-style: italic; color: var(--text-muted);">
+                    "Thank you for being the constant in my life's experiments. Here is to 25 more years of 
+                    discovery, laughter, and successful molecular bonding. I love you so much!!"
+                </p>
+                <div class="signature" style="margin-top: 3rem; border-top: 1px solid var(--border-color); padding-top: 1rem;">
+                    <p><strong>Signed,</strong></p>
+                    <p>Your Lead Researcher & Best Friend</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer style="text-align: center; padding: 4rem; border-top: 1px solid var(--border-color); font-size: 0.7rem; color: #999; letter-spacing: 0.2em;">
+        &copy; 2026 JOURNAL OF HLUBI • PUBLISHED WITH LOVE
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Initialize Icons
+        lucide.createIcons();
+    </script>
+</body>
+</html>
